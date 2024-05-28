@@ -12,7 +12,7 @@ export default function Navbar(){
     <span className="navbar-toggler-icon"></span>
     </button>
     
-    <div className="offcanvas offcanvas-end" tabindex="-1" 
+    <div className="offcanvas offcanvas-end" tabIndex="-1" 
     id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
     <div className="offcanvas-header">
         <h5 className="offcanvas-title" id="offcanvasNavbarLabel">Offcanvas</h5>

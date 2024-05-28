@@ -7,7 +7,7 @@ export default function MenuItem({image, altText, price, item}) {
                 <div className="card-body">
                     <h5 className="card-title">{item}</h5>
                         <p className="card-text">{`$${price}`}</p>
-                        <button type="button" class="btn btn-outline-primary">Add to cart</button>        
+                        <button type="button" className="btn btn-outline-primary">Add to cart</button>        
                 </div>        
     </div>
     )
