@@ -3,11 +3,11 @@ import React from 'react'
 export default function MenuItem({image, altText, price, item}) {
     return (   
         <div className="card" style={{width: "14rem"}}>
-            <img src={image} className="card-img-top" alt="..."/>
+            <img src={image} className="card-img-top" alt={altText}/>
                 <div className="card-body">
                     <h5 className="card-title">{item}</h5>
                         <p className="card-text">{`$${price}`}</p>
-                        <button type="button" class="btn btn-outline-primary">Add to cart</button>        
+                        <button type="button" className="btn btn-outline-primary">Add to cart</button>        
                 </div>        
     </div>
     )
