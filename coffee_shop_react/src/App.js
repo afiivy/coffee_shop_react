@@ -1,7 +1,7 @@
 import React, {useState, useEffect} from 'react';
 import './App.css';
 import MenuItem from './components/MenuItem'
-import { fakeMenuItems, fakeMerchItems } from './fakeData';
+import { fakeMenuItems, fakeMerchItems, fakePastriesItems } from './menuData';
 import Navbar from './components/Navbar';
 import Popup from './components/Popup';
 
@@ -11,6 +11,7 @@ import Popup from './components/Popup';
 function App() {
   const [ menuItems, setMenuItems] = useState(fakeMenuItems)
   const [merchItems, setMerchItems] = useState(fakeMerchItems)
+  const [pastriesItems, setPastriesItems] = useState(fakePastriesItems)
 
   return (
 <>
@@ -28,7 +29,7 @@ function App() {
       <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
   <div class="carousel-inner">
     <div class="carousel-item active">
-      <img src="..." class="d-block w-100" alt="..."/>
+      <img src="" class="d-block w-100" alt="..."/>
     </div>
     <div class="carousel-item">
       <img src="..." class="d-block w-100" alt="..."/>
@@ -58,10 +59,19 @@ function App() {
         ))}
       </div>
 
+      <div className="row my-5">
+        <div className="h3">Pastries</div>
+        {pastriesItems && pastriesItems.length > 0 && pastriesItems.map((pastriesItem) => (
+            <MenuItem key={pastriesItems.id} item={pastriesItems.item} 
+            price={pastriesItem.price} image={pastriesItem.image} altText={pastriesItem.item} />
+        ))}
+      </div>
+
       <div className="row">
         <div className="h3">Merchandise</div>
         {merchItems && merchItems.length > 0 && merchItems.map((merchItem) => (
-          <MenuItem key={merchItem.id} item={merchItem.item} price={merchItem.price} image={merchItem.image} altText={merchItem.item} />
+          <MenuItem key={merchItem.id} item={merchItem.item} price={merchItem.price} 
+          image={merchItem.image} altText={merchItem.item} />
         ))}
       </div>
     </div>
