@@ -2,7 +2,7 @@ import React from 'react'
 
 export default function MenuItem({image, altText, price, item}) {
     return (   
-        <div className="card" style={{width: "16rem", backgroundColor: "black"}}>
+        <div className="card" style={{width: "16rem", backgroundColor: "black", color: "white"}}>
             <img src={image} className="card-img-top" alt="..."/>
                 <div className="card-body">
                     <h5 className="card-title">{item}</h5>
