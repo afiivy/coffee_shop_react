@@ -7,9 +7,6 @@ export default function Popup() {
   ...
     </div>
 
-    <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
-  ...
-    </div>
     </>
   )
 }
