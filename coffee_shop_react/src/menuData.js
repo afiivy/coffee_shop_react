@@ -11,7 +11,7 @@ export const fakeMenuItems = [
 export const fakePastriesItems = [
     { id: 1, item: "Churros", price: 2, image: 'https://github.com/afiivy/images/blob/main/churros.jpg?raw=true' },
     { id: 2, item: "Assorted Donuts", price: 2, image: 'https://github.com/afiivy/images/blob/main/donuts.jpg?raw=true' },
-    { id: 3, item: "Puff Puff(Buff Loaf", price: 3, image: 'https://raw.githubusercontent.com/afiivy/images/main/puff%20puff.webp' },
+    { id: 3, item: "Puff Puff(Buff Loaf)", price: 3, image: 'https://raw.githubusercontent.com/afiivy/images/main/puff%20puff.webp' },
     { id: 4, item: "Empanada(Meat Pie)", price: 4, image: 'https://github.com/afiivy/images/blob/main/empanada.jpg?raw=true' },
 
 ]

@@ -1,4 +1,14 @@
 .nav {
-    margin-bottom: 50px;
+    margin-bottom: 20px;
     background-color: black;
+    justify-content: right;
+    font-size: 18px;
 }
+
+.java{
+    margin: 10px;
+    color: blue;
+    font-size: 35px;
+}
+
+

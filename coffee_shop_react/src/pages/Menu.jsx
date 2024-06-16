@@ -1,6 +1,6 @@
 import React, {useState, useEffect} from 'react';
 import MenuItem from '../components/MenuItem'
-import { fakeMenuItems, fakeMerchItems, fakePastriesItems, shoppingCartItem } from '../menuData';
+import { fakeMenuItems, fakeMerchItems, fakePastriesItems,shoppingCartItem } from '../menuData';
 // import Weather from '../components/Weather';
 import Navbar from '../components/Navbar';
 import Popup from '../components/Popup';
@@ -29,9 +29,9 @@ export default function Home() {
   return (
 <>  
     <div className='container'>
-      <div className="row">
-        <div className="col-5"></div>
-        <div className="col-2">
+      <div className="row">Cart 
+       {/* <div className="col-10"></div>  */}
+        <div className="col-10">
           <Cart cartItems={shoppingCart}/>
         </div>
       </div>
@@ -39,21 +39,21 @@ export default function Home() {
 
       <div className="row my-5">
       <div className="h3">Coffee</div>
-        <div className="col-10">
-        {menuItems && menuItems.length > 0 && menuItems.map((menuItem) => (
+        {/* <div className="col-10"> */}
+        {menuItems && menuItems.length > 0 && menuItems.map
+        ((menuItem)=> (
             <MenuItem key={menuItem.id} item={menuItem.item} 
             price={menuItem.price} id={menuItem.id} image={menuItem.image} altText={menuItem.item} updateCart={updateCart} />
         ))}
-        </div>
-        <div className="col-2"></div>        
+        {/* </div>
+        <div className="col-2"></div>         */}
       </div>
       
 
       <div className="row my-5">
         <div className="h3">Pastries</div>
         {pastriesItems && pastriesItems.length > 0 && pastriesItems.map((pastriesItem) => (
-            <MenuItem key={pastriesItems.id} item={pastriesItems.item} 
-            price={pastriesItem.price} image={pastriesItem.image} altText={pastriesItem.item} />
+            <MenuItem key={pastriesItem.id} item={pastriesItem.item} price={pastriesItem.price} image={pastriesItem.image} altText={pastriesItem.item} />
         ))}
       </div>
 

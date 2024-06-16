@@ -4,18 +4,20 @@ import { fakeMenuItems, fakeMerchItems, fakePastriesItems, shoppingCartItem } fr
 
 
 
+
 export default function Cart({cartItems}) {
     
-
+return (
+    <> 
     
-
-  return (
-    
-    <div>
-       {cartItems && cartItems.length > 0 && cartItems.map((menuItem) => (
+    <div className='cartItem' size>
+        {cartItems && cartItems.length > 0 && cartItems.map((menuItem) => (
             <MenuItem key={menuItem.id} item={menuItem.item} 
-            price={menuItem.price} image={menuItem.image} altText={menuItem.item} />
+            price={menuItem.price} image={menuItem.image}altText={menuItem.item} />
         ))} 
     </div>
-  )
+
+    </>
+    
+    )
 }
