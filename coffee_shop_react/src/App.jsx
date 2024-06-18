@@ -7,6 +7,9 @@ import {
 import Layout from './components/Layout'
 import Home from './pages/Home'
 import Locations from './pages/Locations'
+import Footer from './components/Footer';
+import About from './pages/About';
+import Contact from './pages/Contact';
 
 
 
@@ -19,6 +22,8 @@ const router = createBrowserRouter([
       {path: "/", element:<Home/>},
       {path:"menu", element: <Menu/>},
       {path: "locations", element: <Locations/>},
+      {path:"about", element: <About/>},
+      {path:"contact", element: <Contact/>},
     ]
   },
   
@@ -72,8 +77,9 @@ ${lat}&lon=${lon}&appid=${weatherApiKey}&units=imperial`);
 
   return (
     <>
-    {/* <Weather currentTemp={currentTemp} userCity={userCity}/> */}
+    <Weather currentTemp={currentTemp} userCity={userCity}/>
     <RouterProvider router={router} />
+    <Footer/>
     
     </>
     

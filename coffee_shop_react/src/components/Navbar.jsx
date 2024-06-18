@@ -9,18 +9,13 @@ export default function Navbar(){
     // const navigate = useNavigate();
     
     
-    
-    
-
-
-    
     return(
         <>
         
 
         <Cart/>
-         <h3 className="java">Java Coffee Shop<GiCoffeePot /></h3>
-         <div className="nav"><div>
+    <h3 className="java">Java Coffee Shop<GiCoffeePot /></h3>
+        <div className="nav"><div>
 
     <ul className="nav nav-pills">
         <li className="nav-item">
