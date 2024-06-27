@@ -14,7 +14,7 @@ export default function Navbar(){
         
 
         <Cart/>
-    <h3 className="java">Java Coffee Shop<GiCoffeePot /></h3>
+    <h3 className="java" style={{paddingLeft:"50PX"}}>Java Coffee Shop<GiCoffeePot /></h3>
         <div className="nav"><div>
 
     <ul className="nav nav-pills">
@@ -28,7 +28,8 @@ export default function Navbar(){
             <a className="nav-link" href='/locations'>Cart</a>
         </li>
         <li className="nav-item">
-            <a className="nav-link disabled" aria-disabled="true">Disabled</a>
+        <a className="nav-link" href='/signin'>SignIn</a>
+            {/* <a className="nav-link disabled" aria-disabled="true">Disabled</a> */}
         </li>
     </ul>  
 
