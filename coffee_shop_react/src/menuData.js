@@ -17,7 +17,6 @@ export const fakePastriesItems = [
 ]
 
 export const fakeMerchItems = [
-    // { id: 1, item: "Black Coffee 160z Bag", price: 8, image: 'https://github.com/bryanrigsby/imagesForCoffeeShopSite/blob/main/16ozBagBlackCoffee.jpeg?raw=true' },
     { id: 1, item: "Coffee Tumbler", price: 15, image: 'https://github.com/afiivy/images/blob/main/tumbler.jpg?raw=true' },
     { id: 2, item: "Ceramic Cup", price: 6, image: 'https://github.com/afiivy/images/blob/main/mug2.jpg?raw=true' },
     { id: 3, item: "Logo Hat", price: 12, image: 'https://github.com/afiivy/images/blob/main/hat.jpg?raw=true' },
